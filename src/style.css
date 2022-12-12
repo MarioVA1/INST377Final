@@ -96,8 +96,8 @@ Form Styles
     /* this will push other blocks out of the way */
   
     /* colors */
-    background-color: #000000;
-    color: #ffffff;
+    background-color: red;
+    color: black;
   
     /* shapes */
     border-radius: 6px;
@@ -108,6 +108,7 @@ Form Styles
   
     /* box-shadows are fancy */
     box-shadow: 0 0.5em 1em -0.125em rgba(64, 63, 63, 0.1), 0 0 0 1px rgb(10 10 10 / 2%);
+    text-align: center;
   }
   
   

@@ -1,16 +1,18 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mario Villatoro Amaya's Labs For INST377</title>
-   <link rel="stylesheet" href="style.css">
+    <title>Prince George's Crime Map</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
+
 <body>
     <div class="wrapper">
         <header class="header">
-            <h1>Mario Villatoro Amaya INST377 Labs</h1>
+            <h1>Prince George's Crime Map</h1>
         </header>
         <div class="container">
             <div class="left_section box">
@@ -20,7 +22,12 @@
                         <label for="resto">Filter Restaurant List</label>
                         <input type="text" name="resto" id="resto">
                     </div>
-                    <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>                   
+                    <div class="lds-ellipsis">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
                     <button type="submit" id="get-resto">Change Restaurants</button>
                 </form>
             </div>
@@ -31,16 +38,17 @@
                     <canvas id="myChart"></canvas>
                 </div>
                 <!-- <div id="map"></div> -->
-                <div class="box" id = "restaurant_list" >
+                <div class="box" id="restaurant_list">
                     A list of local restaurants from an API
                 </div>
             </div>
         </div>
         <footer class="footer">
-            MarioVA1
+            Repository
             <a href="http://github.com/MarioVA1" target="_blank" rel="noopener noreferrer">GitHub Account</a>
         </footer>
     </div>
-    <script src= "./script.js"></script>
+    <script src="./script.js"></script>
 </body>
+
 </html>
