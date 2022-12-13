@@ -122,7 +122,7 @@ function getRandomIntInclusive(min, max) {
     const form = document.querySelector('.main_form'); // get your main form so you can do JS with it
     const submit = document.querySelector('#get-resto'); // get a reference to your submit button
     const loadAnimation = document.querySelector('.lds-ellipsis');
-    submit.style.display = 'none'; // let your submit button disappear
+    submit.style.display = 'block'; // let your submit button disappear
   
     /*
           Let's get some data from the API - it will take a second or two to load
