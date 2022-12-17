@@ -37,7 +37,7 @@ async function mainEvent() { // the async keyword means we can make API requests
   
       // const results = await fetch('/api/foodServicePG');
       const fetchQuery = new URLSearchParams(formProps);
-      const results = await fetch(`/api/foodServicePG?${new URLSearchParams(fetchQuery)}`);
+      const results = await fetch(`https://data.princegeorgescountymd.gov/resource/amvf-x3gi.json${new URLSearchParams(fetchQuery)}`);
   
       /*
      ## Get request with query parameters
