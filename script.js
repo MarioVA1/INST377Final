@@ -19,14 +19,14 @@ function getRandomIntInclusive(min, max) {
 
 function injectHTML(list) {
   console.log('fired injectHTML');
-  const target = document.querySelector('#restaurant_list');
+  const target = document.querySelector('#crime_list');
   target.innerHTML = '';
 
   const listEl = document.createElement('ol');
   target.appendChild(listEl);
   list.forEach((item) => {
     const el = document.createElement('li');
-    el.innerText = item.name;
+    el.innerText = item.street_address;
     listEl.appendChild(el);
   });
 
@@ -77,7 +77,7 @@ function processRestaurants(list) {
 function filterList(list, filterInputValue) {
   return list.filter((item) => {
     if (!item.name) { return; }
-    const lowerCaseName = item.name.toLowerCase();
+    const lowerCaseName = item.street_address.toLowerCase();
     const lowerCaseQuery = filterInputValue.toLowerCase();
     return lowerCaseName.includes(lowerCaseQuery);
   });
@@ -227,7 +227,7 @@ async function mainEvent() {
       injectHTML(newArray);
       const localData = shapeDataForLineChart(newArray);
       changeChart(myChart, localData);
-      
+
     // markerPlace(newArray, pageMap);
   });
 
