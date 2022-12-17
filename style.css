@@ -96,6 +96,7 @@ Form Styles
   
   .header h1 {
     display: block;
+    text-align: center;
     /* this will push other blocks out of the way */
   
     /* colors */
