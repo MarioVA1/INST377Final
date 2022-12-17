@@ -203,7 +203,7 @@ async function mainEvent() {
 
   // in your browser console, try expanding this object to see what fields are available to work with
   // for example: arrayFromJson.data[0].name, etc
-  console.log(chartData.data[0]);
+  
 
   // this is called "string interpolation" and is how we build large text blocks with variables
   console.log(`${chartData[0].name} ${chartData[0].category}`);
