@@ -258,3 +258,4 @@ async function mainEvent() {
       It runs first because the listener is set to when your HTML content has loaded
     */
 document.addEventListener('DOMContentLoaded', async () => mainEvent()); // the async keyword means we can make API requests
+}
