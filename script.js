@@ -211,22 +211,23 @@ async function mainEvent() {
   // This IF statement ensures we can't do anything if we don't have information yet
   if (chartData?.length > 0) {
     submit.style.display = 'block';
-  }
+  
   // the question mark in this means "if this is set at all"
 
-  submit.style.display = 'block'; // let's turn the submit button back on by setting it to display as a block when we have data available
+  
 
-  loadAnimation.classList.remove('lds-ellipsis');
-  loadAnimation.classList.add('lds-ellipsis_hidden');
+    loadAnimation.classList.remove('lds-ellipsis');
+    loadAnimation.classList.add('lds-ellipsis_hidden');
 
-  let currentList = [];
+    let currentList = [];
 
-  form.addEventListener('input', (event) => {
-    console.log(event.target.value);
-    const newArray = filterList(currentList, event.target.value);
-    injectHTML(newArray);
-    const localData = shapeDataForLineChart(newArray);
-    changeChart(myChart, localData);
+    form.addEventListener('input', (event) => {
+      console.log(event.target.value);
+      const newArray = filterList(currentList, event.target.value);
+      injectHTML(newArray);
+      const localData = shapeDataForLineChart(newArray);
+      changeChart(myChart, localData);
+      
     // markerPlace(newArray, pageMap);
   });
 
